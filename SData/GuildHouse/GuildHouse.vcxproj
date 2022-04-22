@@ -164,10 +164,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\packages\Newtonsoft.Json.13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Parsec">
-      <HintPath>..\packages\Parsec.1.0.0-alpha.5.0.0\lib\netstandard2.0\Parsec.dll</HintPath>
+      <HintPath>..\..\packages\Parsec.1.0.0-alpha.5.0.0\lib\netstandard2.0\Parsec.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
