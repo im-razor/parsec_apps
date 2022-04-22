@@ -3,7 +3,6 @@
 
 #pragma warning(disable: 4691)
 
-using namespace System;
 using namespace Parsec;
 using namespace Parsec::Readers;
 using namespace Parsec::Shaiya::SetItem;
