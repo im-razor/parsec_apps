@@ -15,13 +15,13 @@ int main()
 
 	if (ch == 'e')
 	{
-		KillStatus^ killStatus = Reader::ReadFromFile<KillStatus^>("KillStatus.SData");
+		auto killStatus = Reader::ReadFromFile<KillStatus^>("KillStatus.SData");
 		killStatus->ExportJson("KillStatus.json");
 	}
 
 	if (ch == 'c')
 	{
-		KillStatus^ killStatus = Reader::ReadFromJson<KillStatus^>("KillStatus.json");
+		auto killStatus = Reader::ReadFromJson<KillStatus^>("KillStatus.json");
 		killStatus->Write("KillStatus.SData");
 	}
 }

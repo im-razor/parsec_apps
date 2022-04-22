@@ -15,13 +15,13 @@ int main()
 
 	if (ch == 'e')
 	{
-		SetItem^ setItem = Reader::ReadFromFile<SetItem^>("SetItem.SData");
+		auto setItem = Reader::ReadFromFile<SetItem^>("SetItem.SData");
 		setItem->ExportJson("SetItem.json");
 	}
 
 	if (ch == 'c')
 	{
-		SetItem^ setItem = Reader::ReadFromJson<SetItem^>("SetItem.json");
+		auto setItem = Reader::ReadFromJson<SetItem^>("SetItem.json");
 		setItem->WriteEncrypted("SetItem.SData");
 	}
 }

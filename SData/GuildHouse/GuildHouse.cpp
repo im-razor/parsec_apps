@@ -15,13 +15,13 @@ int main()
 
 	if (ch == 'e')
 	{
-		GuildHouse^ guildHouse = Reader::ReadFromFile<GuildHouse^>("GuildHouse.SData");
+		auto guildHouse = Reader::ReadFromFile<GuildHouse^>("GuildHouse.SData");
 		guildHouse->ExportJson("GuildHouse.json");
 	}
 
 	if (ch == 'c')
 	{
-		GuildHouse^ guildHouse = Reader::ReadFromJson<GuildHouse^>("GuildHouse.json");
+		auto guildHouse = Reader::ReadFromJson<GuildHouse^>("GuildHouse.json");
 		guildHouse->Write("GuildHouse.SData");
 	}
 }
