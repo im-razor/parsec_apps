@@ -9,7 +9,7 @@ using namespace Parsec::Shaiya::GuildHouse;
 
 int main()
 {
-	std::cout << "Press 'e' to extract or 'c' to compile.\n";
+	std::cout << "Press 'e' to export or 'i' to import.\n";
 
 	char ch = _getch();
 
@@ -19,7 +19,7 @@ int main()
 		guildHouse->ExportJson("GuildHouse.json");
 	}
 
-	if (ch == 'c')
+	if (ch == 'i')
 	{
 		auto guildHouse = Reader::ReadFromJson<GuildHouse^>("GuildHouse.json");
 		guildHouse->Write("GuildHouse.SData");

@@ -9,7 +9,7 @@ using namespace Parsec::Shaiya::SetItem;
 
 int main()
 {
-	std::cout << "Press 'e' to extract or 'c' to compile.\n";
+	std::cout << "Press 'e' to export or 'i' to import.\n";
 
 	char ch = _getch();
 
@@ -19,7 +19,7 @@ int main()
 		setItem->ExportJson("SetItem.json");
 	}
 
-	if (ch == 'c')
+	if (ch == 'i')
 	{
 		auto setItem = Reader::ReadFromJson<SetItem^>("SetItem.json");
 		setItem->WriteEncrypted("SetItem.SData");

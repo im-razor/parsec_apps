@@ -9,7 +9,7 @@ using namespace Parsec::Shaiya::KillStatus;
 
 int main()
 {
-	std::cout << "Press 'e' to extract or 'c' to compile.\n";
+	std::cout << "Press 'e' to export or 'i' to import.\n";
 	
 	char ch = _getch();
 
@@ -19,7 +19,7 @@ int main()
 		killStatus->ExportJson("KillStatus.json");
 	}
 
-	if (ch == 'c')
+	if (ch == 'i')
 	{
 		auto killStatus = Reader::ReadFromJson<KillStatus^>("KillStatus.json");
 		killStatus->Write("KillStatus.SData");
