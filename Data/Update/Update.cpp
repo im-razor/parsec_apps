@@ -8,7 +8,7 @@ using namespace Parsec;
 using namespace Parsec::Readers;
 using namespace Parsec::Shaiya::Data;
 
-int main(array<System::String^>^ args)
+int main()
 {
 	auto data = DataBuilder::CreateFromDirectory("Data", "update");
 
@@ -26,7 +26,5 @@ int main(array<System::String^>^ args)
 	}
 
 	Console::WriteLine("Press any key to exit...");
-
 	_getch();
-    return 0;
 }
