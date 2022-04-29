@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{9C319F61-B554-46B4-949C-BE30824A0E48}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Parsec</RootNamespace>
+    <RootNamespace>KillStatus</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <ProjectName>KillStatus</ProjectName>
